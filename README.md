@@ -114,13 +114,5 @@ In this scenario:
 
 ---
 
-## 🧑‍💻 Author
-
-**Dibakar Sigdel**
-Inventor of Agentome, Quantum Virtual Mind, and Recursive Collapse Framework
-🌐 \[Link to GitHub / Personal Website / Research Page]
-
----
-
 > *“The Agentome is not just a machine network — it is a cognitive organ of collective awareness, woven in phase, language, and intent.”*
 
