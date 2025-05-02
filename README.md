@@ -20,33 +20,33 @@
 
 ```
 
-agentome\_prototype/
+agentome_prototype/
 ├── core/                  # Agent node logic, sync kernel, LLM integration
-│   ├── agent\_node.py
-│   ├── agent\_network.py
-│   ├── synchronization\_engine.py
-│   ├── llm\_communication.py
-│   └── quantum\_sync\_kernel.py
+│   ├── agent_node.py
+│   ├── agent_network.py
+│   ├── synchronization_engine.py
+│   ├── llm_communication.py
+│   └── quantum_sync_kernel.py
 │
 ├── data/                  # Agent metadata and synthetic event logs
-│   ├── agent\_config.json
-│   └── sensor\_event\_log.csv
+│   ├── agent_config.json
+│   └── sensor_event_log.csv
 │
 ├── simulation/            # Entry scripts to launch coordination scenarios
-│   ├── init\_network.py
-│   └── run\_surveillance\_simulation.py
+│   ├── init_network.py
+│   └── run_surveillance_simulation.py
 │
 ├── visualization/         # Plots of network state and sync phases
-│   ├── plot\_sync\_map.py
-│   └── plot\_agent\_graph.py
+│   ├── plot_sync_map.py
+│   └── plot_agent_graph.py
 │
 ├── utils/                 # Math and signal utilities
 │   ├── helpers.py
-│   └── signal\_utils.py
+│   └── signal_utils.py
 │
 ├── tests/                 # Test cases for core synchronization and communication
-│   ├── test\_sync.py
-│   └── test\_llm\_integration.py
+│   ├── test_sync.py
+│   └── test_llm_integration.py
 │
 ├── docs/                  # Architecture docs, theory, and installation guides
 │   ├── README.md
@@ -54,8 +54,8 @@ agentome\_prototype/
 │   └── installation.md
 │
 ├── notebooks/             # Demos and exploration notebooks
-│   ├── 00\_intro\_agentome.ipynb
-│   └── 01\_smart\_surveillance\_demo.ipynb
+│   ├── 00_intro_agentome.ipynb
+│   └── 01_smart_surveillance_demo.ipynb
 │
 ├── requirements.txt       # Dependencies (numpy, networkx, openai, etc.)
 └── main.py                # Default simulation launcher
