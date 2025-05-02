@@ -1,0 +1,2 @@
+# File: sensor_event_log.csv
+print('Hello from agentome_prototype/data/sensor_event_log.csv')
