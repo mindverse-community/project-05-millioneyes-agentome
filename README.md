@@ -1,118 +1,172 @@
-# 🤖 Agentome
-
-**Agentome** is a simulation and deployment framework for **quantum-synchronized intelligent agents**. Inspired by quantum graph theory, multi-agent coordination, and large language models (LLMs), Agentome allows autonomous agents—such as sensors, drones, and software entities—to communicate, synchronize, and evolve as a **coherent cognitive network**.
+# 🧠 Million-Eyes Project  
+### *A Multi-Agent AI System for Cognitive Surveillance Intelligence*  
+**Developed by Mindverse Computing**
 
 ---
 
-## 🌐 Core Ideas
+## 🌐 Overview
 
-| Component | Description |
-|----------|-------------|
-| 🧠 **AgentNode** | A physical or digital agent (sensor, camera, bot, LLM process) |
-| 🔗 **Quantum Graph** | A network where edges represent phase-synchronized connections |
-| 🎼 **Synchronization Engine** | Maintains coherence and alignment among agents |
-| 🗣️ **LLM Communication Layer** | Enables semantic messaging and reasoning between agents |
-| 🌍 **Applications** | Smart surveillance, edge AI networks, human-agent collaboration |
+The **Million-Eyes Project** is a Megha-scale AI initiative to develop an **intelligent surveillance connectome**—a hierarchical, recursive network of AI agents that collectively simulate perception, memory, reasoning, and system-level awareness.
+
+Unlike traditional software development, **Million-Eyes is being written by AI agents**. These agents are organized in layers, each with a dedicated function: from architectural vision to instruction writing, prompt engineering, code generation, testing, and feedback.
+
+This repository contains the auto-generated codebase, agent instructions, prompts, test logs, and supporting workflows — all built under the Mindverse Multi-Agent Development Framework.
+
+---
+
+## 🧱 Multi-Agent Development Stack
+
+| Layer | Agent Role | Responsibility |
+|-------|------------|----------------|
+| **0** | AI Architect | Defines vision, architecture, design manifest |
+| **1** | Coordinator Agent | Decomposes the system, assigns modules |
+| **2** | Promoter Agents | Write formal module instructions |
+| **3** | Prompter Agents | Generate executable prompts for coders |
+| **4** | Coder Agents | Write code from prompts |
+| **5** | Evaluation & Feedback Agents | Test, validate, and refine code |
+
+---
+
+## 🔁 Recursive Feedback & Shared Memory
+
+All agents log to a shared vector database (e.g., ChromaDB), allowing:
+- Prompt → Code → Test traceability
+- Iterative learning from prior decisions
+- Feedback-guided refinement at scale
+
+---
+
+## 🧠 Intelligence Stack: Surveillance System Roles
+
+| Layer | Agent Type | Function |
+|-------|------------|----------|
+| Sense Layer | Camera Agents | Object detection, NLP-based message generation |
+| Memory Layer | Memory Agents | Historical event storage and retrieval |
+| Intellect Layer | Intellect Agents | Inference, prediction, reasoning |
+| Sync Layer | Sync Agents | Stream synchronization and fusion |
+| Report Layer | Visualization Agent | Narrative generation and dashboard outputs |
+
+---
+
+## 🔄 Workflow Diagram (Mermaid)
+
+```mermaid
+graph TD
+
+A[AI Architect] --> B[Vision Document]
+A --> C[Design Manifest]
+A --> D[Meta-Prompt Plan]
+
+B --> E[Coordinator Agent]
+C --> E
+D --> E
+
+E --> F1[Module Map]
+E --> F2[Workflow Plan]
+E --> G1[Promoter Agent 1]
+E --> G2[Promoter Agent 2]
+
+G1 --> H1[Instruction: CameraProcessor]
+G2 --> H2[Instruction: MemoryVectorizer]
+
+H1 --> I1[Prompter Agent A]
+H2 --> I2[Prompter Agent B]
+
+I1 --> J1[Prompt: CameraProcessor]
+I2 --> J2[Prompt: MemoryVectorizer]
+
+J1 --> K1[Coder Agent X]
+J2 --> K2[Coder Agent Y]
+
+K1 --> L1[Module: camera_processor.py]
+K2 --> L2[Module: memory_vectorizer.py]
+
+L1 --> M1[Evaluation Agent α]
+L2 --> M2[Evaluation Agent β]
+
+M1 --> N1[Test Report: CameraProcessor]
+M2 --> N2[Test Report: MemoryVectorizer]
+
+N1 --> I1
+N2 --> I2
+````
 
 ---
 
 ## 📁 Folder Structure
 
+```bash
+million-eyes/
+├── architect/
+│   ├── vision.md
+│   ├── design_manifest.yaml
+│   └── meta_prompt_plan.json
+├── coordinator/
+│   ├── module_map.yaml
+│   ├── workflow_plan.yaml
+├── promoters/
+│   └── instructions/
+│       ├── camera_processor.md
+│       └── memory_vectorizer.md
+├── prompters/
+│   └── prompts/
+│       ├── camera_processor_prompt.yaml
+│       └── memory_vectorizer_prompt.yaml
+├── coders/
+│   └── src/
+│       └── millioneyes/
+│           ├── camera_processor.py
+│           └── memory_vectorizer.py
+├── evaluators/
+│   └── tests/
+│       ├── test_camera_processor.py
+│       └── test_memory_vectorizer.py
+├── feedback/
+│   ├── refactor_camera_processor.md
+│   └── evaluation_summary.md
+├── memory/
+│   ├── chroma_vector_store/
+│   └── prompt_code_trace.json
+└── README.md
 ```
 
-agentome_prototype/
-├── core/                  # Agent node logic, sync kernel, LLM integration
-│   ├── agent_node.py
-│   ├── agent_network.py
-│   ├── synchronization_engine.py
-│   ├── llm_communication.py
-│   └── quantum_sync_kernel.py
-│
-├── data/                  # Agent metadata and synthetic event logs
-│   ├── agent_config.json
-│   └── sensor_event_log.csv
-│
-├── simulation/            # Entry scripts to launch coordination scenarios
-│   ├── init_network.py
-│   └── run_surveillance_simulation.py
-│
-├── visualization/         # Plots of network state and sync phases
-│   ├── plot_sync_map.py
-│   └── plot_agent_graph.py
-│
-├── utils/                 # Math and signal utilities
-│   ├── helpers.py
-│   └── signal_utils.py
-│
-├── tests/                 # Test cases for core synchronization and communication
-│   ├── test_sync.py
-│   └── test_llm_integration.py
-│
-├── docs/                  # Architecture docs, theory, and installation guides
-│   ├── README.md
-│   ├── architecture.md
-│   └── installation.md
-│
-├── notebooks/             # Demos and exploration notebooks
-│   ├── 00_intro_agentome.ipynb
-│   └── 01_smart_surveillance_demo.ipynb
-│
-├── requirements.txt       # Dependencies (numpy, networkx, openai, etc.)
-└── main.py                # Default simulation launcher
+---
 
-````
+## ⚙️ Tooling & Stack
+
+| Purpose                | Tool                              |
+| ---------------------- | --------------------------------- |
+| Prompt & orchestration | LangChain, LangGraph              |
+| Code generation        | GPT-4, OpenAI Codex               |
+| Testing                | LangSmith, Phoenix                |
+| Memory                 | ChromaDB, FAISS                   |
+| Project workflow       | GitHub Actions, AutoDoc pipelines |
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Contributing
 
-```bash
-# Clone and navigate
-git clone https://github.com/yourusername/agentome_prototype.git
-cd agentome_prototype
+This project is fully AI-generated, but **human reviewers, vision refiners, and systems architects** are welcome to collaborate by:
 
-# Set up environment
-python3 -m venv venv
-source venv/bin/activate
+* Defining new modules
+* Reviewing architecture decisions
+* Suggesting agent-level improvements
 
-# Install dependencies
-pip install -r requirements.txt
+Start by reading:
+📄 `architect/vision.md`
+📜 `coordinator/module_map.yaml`
 
-# Launch simulation
-python main.py
-````
+Then follow the logs in `/memory` to understand system evolution.
 
 ---
 
-## 🛰️ Example Use Case: Smart Surveillance
+## 📌 Summary
 
-In this scenario:
+The **Million-Eyes Project** is not just another surveillance platform.
+It is a demonstration of **autonomous, recursive software architecture**—designed and developed by AI agents that understand vision, structure code, simulate modules, and refine themselves iteratively.
 
-* Each camera or sensor acts as an **agent node**
-* Events are represented as **synchronizable spikes**
-* Agents coordinate based on **quantum-like phase coherence**
-* High-level decisions (e.g. anomaly detection) are assisted by **LLM agents**
-* The system evolves using a **graph Hamiltonian kernel**, simulating awareness
+This repository contains the entire AI-generated lifecycle: from architectural intent to evaluated, production-grade components.
+You're not just reading code. You're witnessing a new kind of engineering.
 
----
-
-## 🧬 Theoretical Underpinnings
-
-* **Quantum Graph Synchronization** — inspired by Kuramoto models & quantum walks
-* **Agentome Architecture** — modular cognitive roles (Sense, Memory, Action, Ego)
-* **LLM-in-the-loop** — for natural language-based decision-making and consensus
-* **Phase collapse & bifurcation** — triggers state transitions (alert, reconfirm, reroute)
-
----
-
-## 🔮 Future Extensions
-
-* Real-world integration with IoT + camera APIs
-* Swarm robotics for warehouse or city surveillance
-* Emotional or behavioral intent modeling with multimodal LLMs
-* Nested agentomes (e.g., fractal cognitive hierarchies)
-
----
-
-> *“The Agentome is not just a machine network — it is a cognitive organ of collective awareness, woven in phase, language, and intent.”*
+Welcome to the era of AI that builds AI.
 
